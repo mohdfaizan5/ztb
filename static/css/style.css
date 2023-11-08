@@ -1,0 +1,128 @@
+@font-face {
+  font-family: 'PPMigra';
+  src: url(../fonts/PPMigra-Regular.fb0ee287.woff2);
+}
+
+@font-face {
+  font-family: 'SharpGrotesk';
+  src: url(../fonts/SharpGrotesk-Bold.164b198a.woff2);
+}
+
+@font-face {
+  font-family: 'TT';
+  src: url(../fonts/TTCommons-Regular.7ec989a7.woff2);
+}
+
+
+header h2 {
+  font-family: 'PPMigra';
+}
+
+header h3 {
+  text-transform: uppercase;
+}
+
+.hero_section {
+  height: 85vh;
+}
+
+.hero_section h1:nth-of-type(1),
+h1:nth-last-of-type(2) {
+  font-family: 'PPMigra';
+  font-size: 121px;
+  text-transform: uppercase;
+  line-height: normal;
+  margin-bottom: -45px;
+}
+
+.hero_section .future_text {
+  font-family: 'SharpGrotesk';
+  font-size: 121px;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+
+.image_popup_div {
+  width: 150px;
+  height: 250px;
+  /* background-color: purple; */
+  position: absolute;
+  /* top: 10%;
+  left: 10%; */
+  overflow: hidden;
+}
+
+.image_popup_div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translateY(100%);
+
+}
+
+header img {
+  height: 33px;
+  width: 70px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: top;
+  margin-right: -10px;
+}
+
+.btn1 {
+  position: relative;
+  overflow: hidden;
+  transition: color;
+}
+
+.btn1 .btn1::before,
+span:hover {
+  color: white;
+
+}
+
+.btn1 span {
+  position: relative;
+  /* z-index: 2; */
+  transition: color 0.5s;
+}
+
+.btn1::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  bottom: -60px;
+  left: -40px;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: rgb(3, 3, 3);
+  transition: width 0.7s, height 0.7s;
+}
+
+.btn1:hover::before {
+  width: 200px;
+  height: 200px;
+  color: white;
+}
+
+footer{
+  color: white;
+}
+
+footer h2 {
+  font-family: 'PPMigra';
+}
+
+footer a, footer h5{
+  color: #bbabd3;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.5);
+  /* color: #e7e4e5; */
+}
+
+footer h4{
+  font-family: "TT";
+  text-transform: uppercase;
+}
